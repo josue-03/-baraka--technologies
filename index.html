@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baraka Technologies and Logistics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .logo h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .logo p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    header .slogan {
+      margin-top: 0.5rem;
+      font-style: italic;
+      font-size: 1rem;
+    }
+    nav {
+      background-color: #00509e;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .services, .contact, .about {
+      background-color: #ffffff;
+      margin: 1rem 0;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .slider {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #00509e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003f7f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Baraka Technologies</h1>
+      <p>& Logistics</p>
+    </div>
+    <p class="slogan">L'ingénierie au service du progrès moderne</p>
+  </header>
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="about" class="about">
+    <h2>À propos</h2>
+    <p>Baraka Technologies and Logistics est une entreprise d'ingénierie spécialisée dans la construction de maisons et de routes modernes. Notre équipe réunit des experts en génie civil, électricité, électronique et réseaux.</p>
+  </section>
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <ul>
+      <li>Conception et construction d'infrastructures modernes (maisons, routes)</li>
+      <li>Installations électriques et électroniques</li>
+      <li>Systèmes de surveillance et domotique</li>
+      <li>Solutions en réseau et télécommunications</li>
+      <li>Logistique et gestion des matériaux</li>
+    </ul>
+  </section>
+  <section id="gallery" class="gallery">
+    <h2>Projets / Réalisations</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide"><img src="https://source.unsplash.com/800x400/?construction" alt="Projet 1"></div>
+        <div class="slide"><img src="https://source.unsplash.com/800x400/?engineering" alt="Projet 2"></div>
+        <div class="slide"><img src="https://source.unsplash.com/800x400/?technology" alt="Projet 3"></div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:josuebaraaka@gmail.com">josuebaraaka@gmail.com</a></p>
+    <p>Téléphone : <a href="tel:+250792412058">+250 792 412 058</a> / <a href="tel:+243998363568">+243 998 363 568</a></p>
+    <p>WhatsApp : même numéros que ci-dessus</p>
+    <p>Adresse : Kigali, Gisozi, KG 730 ST, Rwanda</p>
+    <form action="mailto:josuebaraaka@gmail.com" method="post" enctype="text/plain">
+      <label>Nom :</label>
+      <input type="text" name="name" required>
+      <label>Email :</label>
+      <input type="email" name="email" required>
+      <label>Message :</label>
+      <textarea name="message" rows="4" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Baraka Technologies and Logistics. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
